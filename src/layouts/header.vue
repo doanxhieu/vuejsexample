@@ -1,6 +1,6 @@
 <template>
-   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-light border-bottom" style="background:#42b983">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -119,6 +119,7 @@
       </li>
     </ul>
   </nav>
+  <!-- /.navbar -->
 </template>
 <script>
 export default {

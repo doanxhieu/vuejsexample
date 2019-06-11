@@ -1,7 +1,7 @@
     
 <style>
-@import "./assets/css/font-awesome.min.css";
-@import "./assets/css/adminlte.min.css";
+@import "./assets/plugins/font-awesome/css/font-awesome.min.css";
+@import "./assets/dist/css/adminlte.min.css";
 </style>
 <template>
   <div class="wrapper">
@@ -11,11 +11,8 @@
     <Footer></Footer>
   </div>
 </template>
-<script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/adminlte.min.js"></script>
-
 <script>
+
 // components
 import Header from "./layouts/header";
 import Aside from "./layouts/aside";
