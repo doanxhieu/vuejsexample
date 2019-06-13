@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div class="form-group">
+      <router-link to="/products/add" class="btn btn-primary">
+        Add
+        <i class="fa fa-plus"></i>
+      </router-link>
+    </div>
     <b-table
       :striped="striped"
       :borderless="borderless"
@@ -9,13 +15,13 @@
       :dark="dark"
       :fixed="fixed"
       :foot-clone="footClone"
-      :items="items"
       :fields="fields"
     ></b-table>
-    <ul>
-      <li v-for="(p, index) in items">{{index}}_{{p.title}}</li>
-    </ul>
   </div>
+
+  <!-- <ul>
+      <li v-for="(p, index) in items">{{index}}_{{p.title}}</li>
+  </ul>-->
 </template>
 
 <script>
@@ -65,23 +71,23 @@ export default {
   methods: {
     loadList() {
       let url = "http://jsonplaceholder.typicode.com/posts";
-      axios
-        .get(url)
-        .then(response => {
-          this.products = response.data;
-          this.items = response.data;
-          console.log(this.products);
-        })
-        .catch(e => {
-          if (e.response) {
-            console.log(e.response.headers);
-          } else if (e.request) {
-            console.log(e.request);
-          } else {
-            console.log(e.message);
-          }
-          console.log(e.config);
-        });
+      // axios
+      //   .get(url)
+      //   .then(response => {
+      //     this.products = response.data;
+      //     this.items = response.data;
+      //     console.log(this.products);
+      //   })
+      //   .catch(e => {
+      //     if (e.response) {
+      //       console.log(e.response.headers);
+      //     } else if (e.request) {
+      //       console.log(e.request);
+      //     } else {
+      //       console.log(e.message);
+      //     }
+      //     console.log(e.config);
+      //   });
     }
   },
   created() {

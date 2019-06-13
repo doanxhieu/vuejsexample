@@ -1,13 +1,16 @@
 <template>
-  <div>
-    <div class="form-group">
-    <router-link to="/products/add" class="btn btn-primary">
-      Add <i class="fa fa-plus"></i>
-    </router-link>
+  <div class="row">
+    <div class="col-md-12 col-xs-12 col-lg-12">
+      <router-view></router-view>
     </div>
-    <router-view></router-view>
   </div>
 </template>
 <script>
+import List from "./List";
+export default {
+  components: {
+    List
+  }
+};
 </script>
 

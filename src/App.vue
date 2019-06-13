@@ -1,14 +1,13 @@
     
 <style>
-@import "./assets/plugins/font-awesome/css/font-awesome.min.css";
-@import "./assets/dist/css/adminlte.min.css";
+@import './assets/dist/css/adminlte.min.css';
+@import './assets/plugins/font-awesome/css/font-awesome.min.css';
 </style>
 <template>
   <div class="wrapper">
     <Header></Header>
     <Aside></Aside>
     <main-content></main-content>
-    <Footer></Footer>
   </div>
 </template>
 <script>

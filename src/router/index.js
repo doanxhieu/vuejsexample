@@ -12,9 +12,7 @@ const IndexProducts =()=> import('@/components/products/Index')
 const AddProducts =() => import('@/components/products/Add')
 const ListProducts =() => import('@/components/products/List')
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+const Learnning =() => import('@/components/learnning/index')
 
 Vue.use(Router)
 
@@ -31,6 +29,7 @@ export default new Router({
             name: 'Login',
             component:Login
         },
+        
         {
             path:'/products',
             component: IndexProducts,
@@ -40,10 +39,14 @@ export default new Router({
                     component: AddProducts
                 },
                 {
-                    path: 'list',
+                    path: 'index',
                     component: ListProducts
                 }
             ]
+        },
+        {
+            path: '/learnning',
+            component: Learnning
         }
     ]
 });

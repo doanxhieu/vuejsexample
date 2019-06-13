@@ -7,13 +7,12 @@
            style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
-
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="asset/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -32,7 +31,15 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/products/list" class="nav-link">
+            <router-link to="/learnning" class="nav-link">
+              <i class="nav-icon fa fa-th"></i>
+              <p>
+                Learnning
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/products/index" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Products
